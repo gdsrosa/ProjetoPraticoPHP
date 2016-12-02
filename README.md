@@ -1,4 +1,4 @@
-# Projeto Pratico PHP
+# Projeto Prático PHP
 
 Este projeto implementa uma agenda de contatos com as seguintes funcionalidades: 
  - Autenticação por Login e Senha
