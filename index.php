@@ -49,11 +49,9 @@ session_start();
                   			$query = "SELECT telefone FROM telefone_contatos WHERE contato_id = {$exibe['id']}";
 							$result = mysql_query($query, $conexao);
 
-							$telefones_string = "";
+							$telefones = mysql_fetch_array($result);
 
-							while($telefones = mysql_fetch_array($result)){
-								$telefones_string = $telefones_string.", ".$telefones['telefone'];
-							}
+							$telefones_string = implode(",", $telefones);
 
 							echo "
 								<tr>	
